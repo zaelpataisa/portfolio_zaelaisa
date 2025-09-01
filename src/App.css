@@ -1,42 +1,43 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+
+@font-face {
+  font-family: OpenSans;
+  src: url('../fonts/OpenSans-VariableFont_wdth\,wght.ttf')
+}
+@font-face {
+  font-family: Roboto;
+  src: url('../fonts/Roboto-VariableFont_wdth\,wght.ttf')
+}
+[disabled] {
+    cursor: not-allowed;
+}
+:root {
+  --colors-01: #ffffff;
+  --colors-02: #000000;
+  --colors-03: #181818;
+  --colors-04: #1e1e1e;
+  --colors-05: #505050;
+  --colors-06: #e0a21f;
+  --colors-07: #866113;
+  --colors-08: #2D2006;
+
+  /* --palette01-1: #ffc107; --palette01-2: #926f18; --palette01-3: #322710; */
+  /* --palette02-1: #28a745; --palette02-2: #22612c; --palette02-3: #132314; */
+  /* --palette03-1: #007bff; --palette03-2: #224991; --palette03-3: #161c31; */
+  /* --palette04-1: #dc3545; --palette04-2: #80272b; --palette04-3: #2d1413; */
+  /* --palette05-1: #343a40; --palette05-2: #222528; --palette05-3: #0f1112; */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+body {
+  background: var(--colors-03);
+  background-image: url('../img/content_wallpaper.webp');
+  background-size: 100%;
+  animation: opactity-config .75s linear;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.font-osFont {
+  font-family: OpenSans;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.font-rFont {
+  font-family: Roboto;
 }
