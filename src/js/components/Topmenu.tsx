@@ -9,11 +9,11 @@ interface LinkData {
 }
 
 const Topmenu = () => {
-  const pIconStyles = "text-[1.5rem] text-[var(--colors-01)]";
+  const pIconStyles = "text-[2rem] text-[var(--colors-01)] hover:text-[var(--colors-06)]/80 hover:text-[2.5rem] transition-0_3";
 
   const location = useLocation();
   const actualUrl = location.pathname;
-  const actualColor = 'text-[var(--colors-06)]';
+  const actualColor = 'text-[3rem] text-[var(--colors-06)]';
 
   const linksData: { data: LinkData[] } = {
     data: [
@@ -22,15 +22,13 @@ const Topmenu = () => {
       {'path': '/',                     'icon': 'FaHome'},
       {'path': '/works',                'icon': 'FaNetworkWired'},
       {'path': '/projects',             'icon': 'GrProjects'},
-      // {'path': '#',                     'icon': 'IoIosColorPalette'},
-      // {'path': '#',                     'icon': 'MdLanguage'},
     ]
   };
 
   return (
     <>
       <div
-        className={`flex flex-row fixed z-40 bottom-[1rem] left-1/2 -translate-x-1/2 w-auto py-2 px-3 space-x-6 bg-[var(--colors-02)]/80 rounded-xl border-1 border-[var(--colors-05)]`}
+        className={`flex flex-row justify-center items-center fixed z-40 bottom-[1rem] left-1/2 -translate-x-1/2 w-auto py-2 px-3 space-x-6 bg-[var(--colors-02)]/80 rounded-xl border-1 border-[var(--colors-05)]`}
       >
         {linksData.data && linksData.data.length > 0 ? (
           linksData.data.map((item, index) => (

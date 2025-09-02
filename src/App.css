@@ -9,8 +9,12 @@
   font-family: Roboto;
   src: url('../fonts/Roboto-VariableFont_wdth\,wght.ttf')
 }
+@font-face {
+  font-family: Inconsolata;
+  src: url('../fonts/Inconsolata-VariableFont_wdth\,wght.ttf')
+}
 [disabled] {
-    cursor: not-allowed;
+  cursor: not-allowed;
 }
 :root {
   --colors-01: #ffffff;
@@ -21,12 +25,22 @@
   --colors-06: #e0a21f;
   --colors-07: #866113;
   --colors-08: #2D2006;
+  
 
-  /* --palette01-1: #ffc107; --palette01-2: #926f18; --palette01-3: #322710; */
+  /* -------------  Amarillo  ------------- */
+  /* --palette01-1: #ffc107; --palette01-2: #926f18; --palette01-3: #322710; */ 
+  /* -------------  Verde     ------------- */
   /* --palette02-1: #28a745; --palette02-2: #22612c; --palette02-3: #132314; */
+  /* -------------  Azul      ------------- */
   /* --palette03-1: #007bff; --palette03-2: #224991; --palette03-3: #161c31; */
+  /* -------------  Rojo      ------------- */
   /* --palette04-1: #dc3545; --palette04-2: #80272b; --palette04-3: #2d1413; */
+  /* -------------  Negro     ------------- */
   /* --palette05-1: #343a40; --palette05-2: #222528; --palette05-3: #0f1112; */
+}
+
+* {
+  /* user-select: none; */
 }
 
 body {
@@ -40,4 +54,29 @@ body {
 }
 .font-rFont {
   font-family: Roboto;
+}
+.font-iFont {
+  font-family: Inconsolata;
+}
+.transition-0_3 {
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* Venezuelan Styles */
+.vzla-styles:hover {
+  background-image: linear-gradient(to right, #ffc107, #003cff, #ff0019);
+  background-color: transparent;
+  color: var(--colors-01);
+}
+.vzla-gradient {
+  background-image: linear-gradient(to right, #ffc107 0%, #003cff 50%, #ff0019 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.3s ease-in-out; 
+}
+.vzla-styles:hover .vzla-gradient {
+  background-image: none; 
+  color: var(--colors-01);
 }
