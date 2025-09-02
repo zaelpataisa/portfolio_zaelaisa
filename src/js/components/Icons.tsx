@@ -1,30 +1,27 @@
-import { FaHome, FaBook, FaLaptopCode, FaGithub, FaLinkedin, FaInstagram, FaHtml5, FaCss3Alt, FaBootstrap, FaLaravel, FaReact, FaJava, FaPython, FaRaspberryPi, FaUnity, FaVrCardboard } from "react-icons/fa";
-import { FaNetworkWired } from "react-icons/fa6";
+import { FaBook, FaLaptopCode, FaGithub, FaLinkedin, FaInstagram, FaHtml5, FaCss3Alt, FaBootstrap, FaLaravel, FaReact, FaJava, FaPython, FaRaspberryPi, FaUnity, FaVrCardboard, FaDatabase, FaRobot } from "react-icons/fa";
 import { GiVenezuela } from "react-icons/gi";
-import { GrProjects, GrMysql } from "react-icons/gr";
+import { GrMysql } from "react-icons/gr";
 import { HiOutlineMail } from "react-icons/hi";
-import { IoIosColorPalette } from "react-icons/io";
-import { MdLanguage } from "react-icons/md";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiPhp, SiJavascript, SiTypescript, SiArduino,SiMeta } from "react-icons/si";
-import { TbAugmentedReality2 } from "react-icons/tb";
+import { TbAugmentedReality, TbAugmentedReality2 } from "react-icons/tb";
+import { VscTerminalCmd } from "react-icons/vsc";
 
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const IconMap = {
   FaBook: FaBook,                       // Knowledges
-  FaLaptopCode: FaLaptopCode,           // Skills
-  FaHome: FaHome,                       // About Me
-  FaNetworkWired: FaNetworkWired,       // Works
-  GrProjects: GrProjects,               // Projects
-  IoIosColorPalette: IoIosColorPalette, // Colors
-  MdLanguage: MdLanguage,               // Language
 
   GiVenezuela: GiVenezuela,             // Venezuela
   FaGithub: FaGithub,                   // Github logo
   FaLinkedin: FaLinkedin,               // Linkedin Logo
   FaInstagram: FaInstagram,             // Instagram Logo
   HiOutlineMail: HiOutlineMail,         // Mail
+  FaLaptopCode: FaLaptopCode,           // Web Development
+  FaDatabase: FaDatabase,               // Database managment
+  VscTerminalCmd: VscTerminalCmd,       // Software Development
+  FaRobot: FaRobot,                     // Electronics and Robotics
+  TbAugmentedReality: TbAugmentedReality, // Inmersive Reality 
 
   FaHtml5: FaHtml5,                     // HTML
   FaCss3Alt: FaCss3Alt,                 // CSS
@@ -57,9 +54,7 @@ const IconSelect = ({iconCode}: IconSelectProps) => {
 
   if (IconComponent) {
     return (
-      <div className="icon-container">
-        <IconComponent />
-      </div>
+      <IconComponent />
     );
   }
   return null;
