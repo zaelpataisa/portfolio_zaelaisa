@@ -1,5 +1,5 @@
-import IconSelect from "./Icons";
-import type { IconCode } from "./Icons";
+import IconSelect from "../components/Icons";
+import type { IconCode } from "../components/Icons";
 
 const PrincipalContainer = () => {
 
@@ -21,7 +21,7 @@ const PrincipalContainer = () => {
 
   return (
     <>
-      <div className="flex flex-col justify-center items-start px-10 ">
+      <div className="flex flex-col justify-center items-start px-10">
         <p className="text-[2rem] text-[var(--colors-06)] font-bold font-rFont">
           ¡Hola! Soy Elías Zapata
         </p>

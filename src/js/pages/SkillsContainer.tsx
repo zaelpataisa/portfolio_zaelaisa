@@ -1,5 +1,5 @@
-import IconSelect from "./Icons";
-import type { IconCode } from "./Icons";
+import IconSelect from "../components/Icons";
+import type { IconCode } from "../components/Icons";
 
   type SkillItem = {
     text: string;
@@ -62,8 +62,8 @@ const SkillsContainer = () => {
 
   return (
     <>
-      <div className="flex flex-col justify-start items-start space-y-10 min-h-[100vh]" id="SkillsContainerDiv">
-        <p className="text-[2rem] text-[var(--colors-06)] font-bold font-rFont">
+      <div className="flex flex-col justify-start items-start space-y-4 min-h-[100vh]" id="SkillsContainerDiv">
+        <p className="text-[2.5rem] text-[var(--colors-06)] font-bold font-rFont">
           Tecnologías
         </p>
         {SkillsData.data && SkillsData.data.length > 0 ? (
@@ -77,7 +77,7 @@ const SkillsContainer = () => {
                 <div className="flex flex-wrap justify-center items-center w-full p-2">
                   {item.content && item.content.length > 0 ? (
                     item.content.map((item2, index2) => (
-                      <div key={index2} className="flex justify-center items-center w-1/3 p-2">
+                      <div key={index2} className="flex justify-center items-center w-1/3 p-1">
                         <div className="flex flex-col justify-center items-center border-2 border-[var(--colors-06)]/25 rounded-lg w-full">
                           <div className="py-2">
                             <p className="text-[var(--colors-08)] text-[3rem]">

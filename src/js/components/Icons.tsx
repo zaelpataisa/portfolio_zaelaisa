@@ -1,4 +1,4 @@
-import { FaBook, FaLaptopCode, FaGithub, FaLinkedin, FaInstagram, FaHtml5, FaCss3Alt, FaBootstrap, FaLaravel, FaReact, FaJava, FaPython, FaRaspberryPi, FaUnity, FaVrCardboard, FaDatabase, FaRobot } from "react-icons/fa";
+import { FaBook, FaLaptopCode, FaGithub, FaLinkedin, FaInstagram, FaHtml5, FaCss3Alt, FaBootstrap, FaLaravel, FaReact, FaJava, FaPython, FaRaspberryPi, FaUnity, FaVrCardboard, FaDatabase, FaRobot, FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { GiVenezuela } from "react-icons/gi";
 import { GrMysql } from "react-icons/gr";
 import { HiOutlineMail } from "react-icons/hi";
@@ -41,6 +41,8 @@ export const IconMap = {
   SiMeta: SiMeta,                       // Meta Quest
   TbAugmentedReality2: TbAugmentedReality2, // Vuforia
   FaVrCardboard: FaVrCardboard,         // Cardboard
+  FaAngleLeft: FaAngleLeft,             // Left
+  FaAngleRight: FaAngleRight,           // Right
 }
 
 export type IconCode = keyof typeof IconMap;
