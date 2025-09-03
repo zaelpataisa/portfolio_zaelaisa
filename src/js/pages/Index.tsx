@@ -1,6 +1,7 @@
 import AboutContainer from "./AboutContainer";
 import EducationContainer from "./EducationContainer";
 import PrincipalContainer from "./PrincipalContainer";
+import ProjectsContainer from "./ProjectsContainer";
 import SkillsContainer from "./SkillsContainer";
 import WorksContainer from "./WorksContainer";
 
@@ -20,6 +21,7 @@ const Index = () => {
           <SkillsContainer />
           <EducationContainer />
           <WorksContainer />
+          <ProjectsContainer />
         </div>
       </div>
     </>
