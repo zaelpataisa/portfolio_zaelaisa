@@ -9,14 +9,18 @@ const Index = () => {
 
   return (
     <>
-      <div className="flex w-full relative ">
+      <div className="flex flex-col justify-start items-start md:flex-row w-full">
         {/* Contenedor principal */}
-        <div className="fixed flex h-full w-3/8 opacity-100">
+        <div 
+          className="md:fixed flex md:justify-center md:items-center min-h-[100dvh] w-full md:w-3/8 opacity-100"
+        >
           <PrincipalContainer />
         </div>
 
         {/* Contenedor de contenido */}
-        <div className="absolute flex flex-col h-auto w-5/8 bg-[var(--colors-01)]/95 right-0 p-10">
+        <div 
+          className="md:absolute flex flex-col h-auto w-full md:w-5/8 bg-[var(--colors-01)]/75 right-0 p-10"
+        >
           <AboutContainer />
           <SkillsContainer />
           <EducationContainer />

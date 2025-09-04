@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Modal from '@mui/material/Modal';
 import CarrouselUJGH from './CarrouselUJGH';
+import IconSelect from './Icons';
 
    
 
@@ -25,7 +26,13 @@ const ModalUJGH = () => {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <div className="absolute flex justify-center items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] bg-[var(--colors-06)]/75 p-4 shadow-lg rounded-2xl">
+                <div className="absolute flex flex-col justify-center items-center top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] bg-[var(--colors-06)]/75 p-4 shadow-lg rounded-2xl">
+                    <button
+                        onClick={handleClose}
+                        className='flex justify-end w-full text-[2rem]'
+                    >
+                        <IconSelect iconCode={'IoMdClose'} />
+                    </button>
                     <CarrouselUJGH />
                 </div>
             </Modal>

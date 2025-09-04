@@ -53,14 +53,14 @@ const EducationContainer = () => {
                                     <span className="font-bold">Periodo: </span>{item.date}
                                 </p>
                                 {item.reconocimiento && item.reconocimiento.length > 0 ? (
-                                    <div className='flex justify-center'>
+                                    <div className='flex justify-center items-center'>
                                         <ModalUJGH />
                                     </div>
                                 ) : (
                                     <div className="hidden">nada</div>
                                 )}
                             </div>
-                            <div className="flex justify-center items-start w-1/5">
+                            <div className="flex justify-center items-center w-1/5">
                                 <img 
                                     src={item.img} 
                                     alt={item.name}

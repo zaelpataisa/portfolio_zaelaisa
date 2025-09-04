@@ -171,7 +171,7 @@ const ProjectsContainer = () => {
                   </div>
 
                   {/* Tecnologías */}
-                  <div className="flex justify-start items-center w-full space-x-3">
+                  <div className="flex flex-wrap justify-start items-center w-full space-x-3">
                     {item.techs && item.techs.length > 0 ? (
                       item.techs.map((item2, index2) => (
                         <div key={index2} className="border-2 border-[var(--colors-06)] text-[1.5rem] rounded-2xl aspect-square p-2">

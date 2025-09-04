@@ -6,11 +6,13 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiPhp, SiJavascript, SiTypescript, SiArduino,SiMeta, SiCisco } from "react-icons/si";
 import { TbAugmentedReality, TbAugmentedReality2 } from "react-icons/tb";
 import { VscTerminalCmd } from "react-icons/vsc";
+import { IoMdClose } from "react-icons/io";
 
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const IconMap = {
   FaBook: FaBook,                       // Knowledges
+  IoMdClose: IoMdClose,                 // Equis - Close
 
   GiVenezuela: GiVenezuela,             // Venezuela
   FaGithub: FaGithub,                   // Github logo
