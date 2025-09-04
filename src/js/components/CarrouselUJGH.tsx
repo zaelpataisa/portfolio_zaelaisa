@@ -8,7 +8,7 @@ interface Slide {
     alt: string;
 }
 
-const Carrousel = () => {
+const CarrouselUJGH = () => {
     const carrouselData: { slides: Slide[] } = {
         slides: [
             { src: '/personal_data/ujgh/ujgh_20240221.jpg', alt: 'ujgh_20240221' },
@@ -82,4 +82,4 @@ const Carrousel = () => {
     );
 };
 
-export default Carrousel;
+export default CarrouselUJGH;

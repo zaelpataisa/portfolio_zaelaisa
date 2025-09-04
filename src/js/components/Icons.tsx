@@ -1,9 +1,9 @@
-import { FaBook, FaLaptopCode, FaGithub, FaLinkedin, FaInstagram, FaHtml5, FaCss3Alt, FaBootstrap, FaLaravel, FaReact, FaJava, FaPython, FaRaspberryPi, FaUnity, FaVrCardboard, FaDatabase, FaRobot, FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { FaBook, FaLaptopCode, FaGithub, FaLinkedin, FaInstagram, FaHtml5, FaCss3Alt, FaBootstrap, FaLaravel, FaReact, FaJava, FaPython, FaRaspberryPi, FaUnity, FaVrCardboard, FaDatabase, FaRobot, FaAngleLeft, FaAngleRight, FaAngleDown } from "react-icons/fa";
 import { GiVenezuela } from "react-icons/gi";
 import { GrMysql } from "react-icons/gr";
 import { HiOutlineMail } from "react-icons/hi";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiPhp, SiJavascript, SiTypescript, SiArduino,SiMeta } from "react-icons/si";
+import { SiPhp, SiJavascript, SiTypescript, SiArduino,SiMeta, SiCisco } from "react-icons/si";
 import { TbAugmentedReality, TbAugmentedReality2 } from "react-icons/tb";
 import { VscTerminalCmd } from "react-icons/vsc";
 
@@ -41,8 +41,10 @@ export const IconMap = {
   SiMeta: SiMeta,                       // Meta Quest
   TbAugmentedReality2: TbAugmentedReality2, // Vuforia
   FaVrCardboard: FaVrCardboard,         // Cardboard
+  SiCisco: SiCisco,                     // Cisco
   FaAngleLeft: FaAngleLeft,             // Left
   FaAngleRight: FaAngleRight,           // Right
+  FaAngleDown: FaAngleDown,             // Down
 }
 
 export type IconCode = keyof typeof IconMap;

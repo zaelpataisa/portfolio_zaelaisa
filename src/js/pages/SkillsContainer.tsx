@@ -68,7 +68,7 @@ const SkillsContainer = () => {
         </p>
         {SkillsData.data && SkillsData.data.length > 0 ? (
             SkillsData.data.map((item, index) => (
-              <div key={index} className="flex flex-col justify-center items-center w-full border-2 border-[var(--colors-06)] bg-[var(--colors-06)]/35 rounded-lg space-y-2">
+              <div key={index} className="flex flex-col justify-center items-center w-full rounded-lg space-y-2">
                 <div className="flex justify-center items-center p-2">
                   <p className={'text-[var(--colors-06)] text-[1.25rem] font-bold font-osFont'}>
                     {item.title}
@@ -78,7 +78,7 @@ const SkillsContainer = () => {
                   {item.content && item.content.length > 0 ? (
                     item.content.map((item2, index2) => (
                       <div key={index2} className="flex justify-center items-center w-1/3 p-1">
-                        <div className="flex flex-col justify-center items-center border-2 border-[var(--colors-06)]/25 rounded-lg w-full">
+                        <div className="flex flex-col justify-center items-center border-2 border-[var(--colors-06)]/25 bg-[var(--colors-06)]/35 rounded-lg w-full">
                           <div className="py-2">
                             <p className="text-[var(--colors-08)] text-[3rem]">
                               <IconSelect iconCode={item2.icon} />
